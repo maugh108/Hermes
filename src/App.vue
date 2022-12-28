@@ -70,20 +70,26 @@ export default {
           to: '/ordenes'
         },
         {
+          icon: 'mdi-card-account-details',
+          title: 'Conductores',
+          to: '/conductores'
+        },
+        {
           icon: 'mdi-truck',
           title: 'Camiones',
           to: '/camiones',
+        },
+        {
+          icon: 'mdi-truck',
+          title: 'Trailers',
+          to: '/Trailers',
         },
         {
           icon: 'mdi-map-marker',
           title: 'Direcciones',
           to: '/direcciones'
         },
-        {
-          icon: 'mdi-card-account-details',
-          title: 'Conductores',
-          to: '/conductores'
-        }
+
       ],
       miniVariant: false,
       title: 'Lucy'

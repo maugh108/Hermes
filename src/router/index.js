@@ -26,15 +26,16 @@ const routes = [
     component: () => import('../views/TrucksView.vue')
   },
   {
+    path: '/Trailers',
+    name: 'trailers',
+    component: () => import('../views/TrailersView.vue')
+  },
+  {
     path: '/direcciones',
     name: 'address',
     component: () => import('../views/LocationsView.vue')
   },
-  {
-    path: '/conductores',
-    name: 'drivers',
-    component: () => import('../views/DriversView.vue')
-  }
+
 ]
 
 const router = new VueRouter({

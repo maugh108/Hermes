@@ -10,13 +10,12 @@
                 <v-data-table :headers="headers" :items="items" :items-per-page="5" class="elevation-1" >
                     <template v-slot:item="row">
                         <tr>
-                            <td>{{row.item.nombre}}</td>
+                            <td>{{row.item.Nombre}}</td>
                             <td>{{row.item.Nacimineto}}</td>
                             <td>{{row.item.Licencia}}</td>
                             <td>{{row.item.Expiracion}}</td>
                             <td>{{row.item.Ciudad}}</td>
                             <td>{{row.item.Telefono}}</td>
-                            >
                         </tr>
                     </template>
                 </v-data-table>
@@ -28,7 +27,7 @@
 
 <script>
     export default{
-        name:'Orders',
+        name:'Conductores',
         data(){
             return{
                 headers: [
