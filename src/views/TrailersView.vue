@@ -10,11 +10,11 @@
                 <v-data-table :headers="headers" :items="items" :items-per-page="5" class="elevation-1" >
                     <template v-slot:item="row">
                         <tr>
-                            <td>{{row.item.driver}}</td>
-                            <td>{{row.item.truck}}</td>
-                            <td>{{row.item.trailer}}</td>
-                            <td>{{row.item.origen}}</td>
-                            <td>{{row.item.destino}}</td>
+                            <td>{{row.item.Numero}}</td>
+                            <td>{{row.item.Marca}}</td>
+                            <td>{{row.item.Año}}</td>
+                            <td>{{row.item.VINnumber}}</td>
+                            <td>{{row.item.Placas}}</td>
                         </tr>
                     </template>
                 </v-data-table>
@@ -29,19 +29,19 @@
         data(){
             return{
                 headers: [
-                    { text: 'Conductor'},
-                    { text: 'Camion'},
-                    { text: 'Trailer' },
-                    { text: 'Origen'},
-                    { text: 'Destino' },
+                    { text: 'Numero'},
+                    { text: 'Marca'},
+                    { text: 'Año' },
+                    { text: 'Vin Number'},
+                    { text: 'Placas' },
                 ],
                 items:[],
                 backendData: [
-                    {origen: "San antonio TX", destino: "Monterry", driver:"Alberto", trailer:"123", truck:"123"},
-                    {origen: "Nuevo Laredo Tp", destino: "Laredo Texas", driver:"Sergio Liogon", trailer:"dsa", truck:"412e"},
-                    {origen: "Monterry NL", destino: "NewYork", driver:"Miguel Moore", trailer:"asd12", truck:"edw"},
-                    {origen: "Laredo Texas", destino: "Nuevo Laredo", driver:"Rafael Salazar", trailer:"12", truck:"123123"},
-                    {origen: "Dallas TX", destino: "San antonio TX", driver:"JGL", trailer:"as1", truck:"53424312"}
+                    {Numero: "14512", Marca: "Wabash", Año:"2004", VINnumber: "1JJV532W38L107197", Placas: "T1788652"},
+                    {Numero: "14512", Marca: "Wabash", Año:"2004", VINnumber: "1JJV532W38L107197", Placas: "T1788652"},
+                    {Numero: "14512", Marca: "Wabash", Año:"2004", VINnumber: "1JJV532W38L107197", Placas: "T1788652"},
+                    {Numero: "14512", Marca: "Wabash", Año:"2004", VINnumber: "1JJV532W38L107197", Placas: "T1788652"},
+                    {Numero: "14512", Marca: "Wabash", Año:"2004", VINnumber: "1JJV532W38L107197", Placas: "T1788652"},
                 ]
             }
         },

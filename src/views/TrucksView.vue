@@ -15,6 +15,7 @@
                             <td>{{row.item.Modelo}}</td>
                             <td>{{row.item.Año}}</td>
                             <td>{{row.item.VINnumber}}</td>
+                            <td>{{row.item.Placas}}</td>
                         </tr>
                     </template>
                 </v-data-table>
@@ -33,15 +34,16 @@
                     { text: 'Marca'},
                     { text: 'Modelo' },
                     { text: 'Año'},
-                    { text: 'VIN Number' },
+                    { text: 'VIN Number'},
+                    { text: 'Placas'},
                 ],
                 items:[],
                 backendData: [
-                    {Numero: "15", Marca: "Ford", Modelo: "150", Año: "2015", VINnumber: "1XKAD49X9BJ276534" },
-                    {Numero: "15", Marca: "Ford", Modelo: "150", Año: "2015", VINnumber: "1XKAD49X9BJ276534"},
-                    {Numero: "15", Marca: "Ford", Modelo: "150", Año: "2015", VINnumber: "1XKAD49X9BJ276534"},
-                    {Numero: "15", Marca: "Ford", Modelo: "150", Año: "2015", VINnumber: "1XKAD49X9BJ276534"},
-                    {Numero: "15", Marca: "Ford", Modelo: "150", Año: "2015", VINnumber: "1XKAD49X9BJ276534"}
+                    {Numero: "15", Marca: "Ford", Modelo: "150", Año: "2015", VINnumber: "1XKAD49X9BJ276534", Placas:"T146562"},
+                    {Numero: "15", Marca: "Ford", Modelo: "150", Año: "2015", VINnumber: "1XKAD49X9BJ276534", Placas:"T146562"},
+                    {Numero: "15", Marca: "Ford", Modelo: "150", Año: "2015", VINnumber: "1XKAD49X9BJ276534", Placas:"T146562"},
+                    {Numero: "15", Marca: "Ford", Modelo: "150", Año: "2015", VINnumber: "1XKAD49X9BJ276534", Placas:"T146562"},
+                    {Numero: "15", Marca: "Ford", Modelo: "150", Año: "2015", VINnumber: "1XKAD49X9BJ276534", Placas:"T146562"},
                 ]
             }
         },
