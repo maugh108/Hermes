@@ -35,6 +35,16 @@ const routes = [
     name: 'address',
     component: () => import('../views/LocationsView.vue')
   },
+  {
+    path: '/orden/formulario',
+    name: 'ExpandOrder',
+    component: () => import ('../views/ExpandOrderView.vue')
+  },
+  {
+    path: '/direccion/formulario',
+    name: 'ExpandLocations',
+    component: () => import ('../views/ExpandLocation.vue')
+  }
 
 ]
 

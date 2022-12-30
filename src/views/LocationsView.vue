@@ -3,7 +3,7 @@
         <v-row class="pa-10">
             <v-btn color="primary" @click="CargarOrdenes">Cargar Direcciones</v-btn>
             <v-spacer></v-spacer>
-            <v-btn color="success">Agregar Direccion</v-btn>
+            <v-btn color="success" @click="$router.push('/direccion/formulario')">Agregar Direccion</v-btn>
         </v-row>
         <v-row>
             <v-col cols="12">

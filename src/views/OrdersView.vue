@@ -3,7 +3,7 @@
         <v-row class="pa-10">
             <v-btn color="primary" @click="CargarOrdenes">Cargar Ordenes</v-btn>
             <v-spacer></v-spacer>
-            <v-btn color="success">Crear Orden</v-btn>
+            <v-btn color="success" @click="$router.push('/orden/formulario')">Crear Orden</v-btn>
         </v-row>
         <v-row>
             <v-col cols="12">
@@ -26,6 +26,9 @@
 <script>
     export default{
         name:'Orders',
+        mounted(){
+            console.log(this)
+        },
         data(){
             return{
                 headers: [
