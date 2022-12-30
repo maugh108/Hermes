@@ -29,7 +29,6 @@
                     state: this.state,
                     zipcode: this.zipcode
                 }
-                console.log(postData)
             },
         }
     }
